@@ -161,9 +161,6 @@ img {
 }
 
 /******background************/
-footer {
-  background-color: var(--primary-bg-color, #2f303a);
-}
 
 /*************************/
 /*******HEADER************/
@@ -171,11 +168,11 @@ footer {
 
 /*задаём параметры шапки*/
 
-header {
+.page-header {
   border-bottom: 1px solid var(--primary-border-color, #ececec);
 }
 
-header div {
+.page-header div {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -183,35 +180,32 @@ header div {
   letter-spacing: 0.02em;
 }
 
-/* header a  */
-.ss {
+/* .page-header a  */
+.navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-/*header.section{}*/
+/*.page-header.section{}*/
 /*******LOGO**************/
 
-.web,
-.studio {
+/* .web,
+.studio  */
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
-
-.web {
   color: var(--primary-accent-color, #2196f3);
 }
 
-/*параметры Logo studio для шапки*/
-.up {
+
+.logo--up {
   color: var(--black-logo-Color, #000000);
 }
 
-/*параметры Logo studio для подвала*/
-.down {
+.logo--down {
   color: var(--white-txt-color, #ffffff99);
   /*
   прозрачность 60%  в HEX 99 
@@ -220,7 +214,7 @@ header div {
 }
 
 /*******navigation********/
-/*размер контейнера nav*/
+
 .navigation {
   display: flex;
   margin-left: 93px;
@@ -229,76 +223,69 @@ header div {
 .navigation > li + li {
   margin-left: 50px;
 }
+
 .navigation > li {
   display: block;
 }
+
 .studio-after,
-.portfolio-after
-/* a[href="./portfolio.html"] */ {
+.portfolio-after {
   position: relative; /* content: ""; */
-  /* border-bottom: 4px solid #2196f3; */
-  /* background-position: right bottom; */
   background-image: url(../images/2/line-portfolio.svg);
   background-position: right bottom;
 }
+
 .studio-after::after,
 .portfolio-after::after {
   position: absolute;
   color: transparent;
   content: "0";
   display: block;
-  /* padding: 28px 0; */
-  /* border-bottom: 4px solid #2196f3; */
 }
 
 /*******address************************/
-/*задаём параметры ссылок 
-при наведении или фокусе*/
+.page-header__address {
+  margin-left: auto;
+}
 
-.address a:hover,
-.address a:focus,
+.address {
+  display: flex;
+}
+
+
+.address__item + li {
+  margin-left: 50px;
+}
+
+.address__link{
+display: flex;
+align-items: center;
+color: var(--primary-txt-color, #757575);
+stroke: currentColor;
+  fill: currentColor;
+}
+
 a:hover,
 a:focus {
   color: var(--primary-accent-color, #2196f3);
   stroke: var(--primary-accent-color, #2196f3);
   fill: var(--primary-accent-color, #2196f3);
-  /* font-weight: 500; */
-  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), */
-  /* fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
+.tel, .mail{
+margin-left: 5px;
+
+}
 .envelope {
   width: 21px;
   height: 14px;
-  stroke: currentColor;
-  fill: currentColor;
+  
 }
-/* .envelope > use {object-fit: contain;} */
 .smartphone {
-  width: 11px;
+  width: 12px;
   height: 16px;
-  stroke: currentColor;
-  fill: currentColor;
-}
-/* .smartphone:hover { stroke: var(--primary-accent-color, #2196f3);} */
 
-/*параметры контейнера адрес для шапки*/
-.address {
-  display: flex;
-  margin-left: auto;
 }
-
-.address a {
-  /* display: block; */
-  color: var(--primary-txt-color, #757575);
-}
-.address > li {
-  align-items: stretch;
-}
-.address > li + li {
-  margin-left: 50px;
-}
-
 /*****************************/
 /**********main***************/
 /*****************************/
@@ -827,29 +814,35 @@ a:hover {
 /*************FOOTER**************/
 /*********************************/
 
-footer {
+.page-footer {
+  background-color: var(--primary-bg-color, #2f303a);
+}
+
+.footer-section {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.for-footer {
-  display: flex;
-}
-address {
+
+/* address  */
+.page-footer__address-down{
   margin-top: 20px;
   font-style: normal;
 }
-.list-adr > li + li {
+/* .list---adr > li + li {
   margin-top: 9px;
-}
+} */
 .map {
   color: var(--white-txt-color, #ffffff);
 }
 
-.a-dowh {
+.address-dowh__link {
   font-size: 14px;
   line-height: 1.71;
   color: var(--footer-link-color, rgba(255, 255, 255, 0.6));
 }
+
+/**/
 
 .social-footer {
   width: 208px;

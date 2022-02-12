@@ -31,3 +31,15 @@ body {
 
   background: var(--white-txt-color, #ffffff);
 }
+li {
+  list-style-type: none;
+}
+
+/* Отменяем подчеркивание у ссылок 
+         задаём параметры шрифтов*/
+a {
+  text-decoration: none;
+  color: var(--secondary-link-color, #212121);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,39 @@
+.button{
+    padding: 6px 22px;
+    font-family : Roboto;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 1.39;
+    border: none;
+    border-radius: 4px;
+    box-shadow:$shadow-box;
+
+/*filter*/  
+    &__filter{
+        color: $colorTxt-secondary;
+        background-color: $colorBtnBg-filter;
+    }
+
+    &__filter:hover{
+        color: $colorTxt-main;
+        background-color: $colorBtnBg-hover;
+    }
+
+/*hero*/  
+    &__hero{
+        color: $colorTxt-main;
+        background-color: $colorBtnBg-activ;
+    }
+    &__hero:hover{
+        background-color: $colorBtnBg-hover;
+    }
+
+/*submit*/    
+    &__submit{
+        color: $colorTxt-main;
+        background-color: $colorBtnBg-activ;    
+    }
+    &__submit:hover{
+        background-color: $colorBtnBg-hover;
+    }
+}

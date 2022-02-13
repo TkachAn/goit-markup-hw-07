@@ -1,0 +1,20 @@
+@import './utils/variable';
+@import './components/defolt';
+@import './components/buttons';
+
+  /* Отменяем подчеркивание у ссылок 
+           задаём параметры шрифтов*/
+  a {
+    color: $colorTxt-secondary;
+    transition: color 250ms $cubic;
+  }
+
+  body {
+    color:$colorTxt-primary;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    background: $colorLight;
+  }
+  

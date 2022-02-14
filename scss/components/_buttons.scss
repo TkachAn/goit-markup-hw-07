@@ -6,7 +6,7 @@
     line-height: 1.39;
     border: none;
     border-radius: 4px;
-    box-shadow:$shadow-box;
+    box-shadow: $shadow-box;
 
 /*filter*/  
     &__filter{
@@ -23,7 +23,13 @@
     &__hero{
         color: $colorTxt-main;
         background-color: $colorBtnBg-activ;
+        padding: 10px 32px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.88;
+        transition: background-color 250ms $cubic;
     }
+
     &__hero:hover{
         background-color: $colorBtnBg-hover;
         cursor: pointer;
@@ -34,6 +40,7 @@
         color: $colorTxt-main;
         background-color: $colorBtnBg-activ;    
     }
+    
     &__submit:hover{
         background-color: $colorBtnBg-hover;
         cursor: pointer;

@@ -1,64 +1,68 @@
 html {
     box-sizing: border-box;
-  }
+}
+
   *,
   *::before,
   *::after {
     box-sizing: inherit;
     background-repeat: no-repeat;
     /* background-position: center; */
-  }
-  body {
+}
+
+body {
     color:$colorTxt-primary;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     background: $colorLight;
-  }
+}
   
-  .container {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  li {
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+li {
     list-style-type: none;
-  }
+}
 
 h1,
 h2,
 h3,
 h4,
-h5,
 ul,
 li,
 p {
-  padding: 0;
-  margin: 0;
-}
-li {
-    list-style-type: none;
-  }
-  a {
-    text-decoration: none;
-} 
-img {
-  display: block;
-  max-width: 100%;
-}
-a {
-  stroke: $colorTxt-primary;
-  fill: $colorTxt-primary;
-  color: $colorTxt-secondary;
-  transition: fill 1550ms $cubic, stroke 1250ms $cubic, color 1550ms $cubic;
+    padding: 0;
+    margin: 0;
 }
 
-a:hover {
-  color: $colorTxt-accent;
-  cursor: pointer;
-  // transition: fill 1550ms $cubic, color 1250ms $cubic;
+li {
+    list-style-type: none;
 }
+
+a {
+    text-decoration: none;
+} 
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.invisible {
+    position: absolute;
+    opacity: 0;
+}
+
+

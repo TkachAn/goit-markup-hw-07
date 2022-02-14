@@ -1,7 +1,13 @@
 @import './utils/variable';
-@import './components/defolt';
+@import './defolt/defolt';
 @import './components/buttons';
-@import './components/header';
+@import './layout/header';
 @import './components/logo';
 @import './components/nav';
 @import './components/contacts';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/craft';
+@import './layout/developers';
+@import './components/social';
+@import './components/team-card';

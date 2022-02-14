@@ -1,0 +1,16 @@
+.craft {
+    //background-color: ;
+    
+    &__title {
+        Font-size: 36px;
+        Line-height: 1.17;
+        color: $colorTxt-secondary;
+
+        text-align: center;
+    }
+    &__gallery{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+}

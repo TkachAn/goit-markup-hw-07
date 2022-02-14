@@ -1,0 +1,31 @@
+.social{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 208px;
+    height: 44px;
+
+    
+
+    &__block{
+        //padding: 12px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border-color: darkgray;
+
+    }
+
+    &__link{
+        display: block;
+        fill: $colorTxt-socialLink;
+    }
+
+    &__icon{
+        //padding: 12px;
+        width: 44px;
+        height: 44px;
+
+    }
+
+}

@@ -13,10 +13,10 @@
         color: $colorTxt-secondary;
         background-color: $colorBtnBg-filter;
     }
-
     &__filter:hover{
         color: $colorTxt-main;
         background-color: $colorBtnBg-hover;
+        cursor: pointer;
     }
 
 /*hero*/  
@@ -26,6 +26,7 @@
     }
     &__hero:hover{
         background-color: $colorBtnBg-hover;
+        cursor: pointer;
     }
 
 /*submit*/    
@@ -35,5 +36,6 @@
     }
     &__submit:hover{
         background-color: $colorBtnBg-hover;
+        cursor: pointer;
     }
 }

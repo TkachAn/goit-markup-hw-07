@@ -1,0 +1,27 @@
+
+  .header {
+    border-bottom: 1px solid $colorBorder-default;
+  
+
+  &__container {
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .header__nav {
+     padding-right: 177px;
+    }
+    .nav{
+        
+    }
+    // .nav li + li {
+    //     margin-left: 50px;
+    //   } 
+    .header__contacts{
+        //width: 333px;
+        //justify-content: space-between;
+    }   
+}

@@ -8,7 +8,23 @@ html {
     background-repeat: no-repeat;
     /* background-position: center; */
   }
-
+  body {
+    color:$colorTxt-primary;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    background: $colorLight;
+  }
+  
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   li {
     list-style-type: none;
   }
@@ -30,3 +46,19 @@ li {
   a {
     text-decoration: none;
 } 
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  stroke: $colorTxt-primary;
+  fill: $colorTxt-primary;
+  color: $colorTxt-secondary;
+  transition: fill 1550ms $cubic, stroke 1250ms $cubic, color 1550ms $cubic;
+}
+
+a:hover {
+  color: $colorTxt-accent;
+  cursor: pointer;
+  // transition: fill 1550ms $cubic, color 1250ms $cubic;
+}

@@ -1,0 +1,27 @@
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+body {
+    color:$colorTxt-primary;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    background: $colorLight;
+}
+
+.invisible {
+    position: absolute;
+    opacity: 0;
+}
+

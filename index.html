@@ -124,9 +124,18 @@
       <section class="craft section">
         <h2 class="craft__title">Чем мы занимаемся</h2>
         <ul class="container craft__gallery">
-          <li><img src="./images/1/img1.jpg" alt="рабочее место разработчика ПО 1" width="370"></li>
-          <li><img src="./images/1/img2.jpg" alt="рабочее место разработчика ПО 2" width="370"></li>
-          <li><img src="./images/1/img3.jpg" alt="рабочее место разработчика ПО 3" width="370"></li>
+          <li class="craft__item">
+            <img src="./images/1/img1.jpg" alt="рабочее место разработчика ПО 1" width="370">
+            <div class="craft__bg-title"><p class="craft__img-title">Десктопные  приложения</p></div>
+          </li>
+          <li class="craft__item">
+            <img src="./images/1/img2.jpg" alt="рабочее место разработчика ПО 2" width="370">
+            <div class="craft__bg-title"><p class="craft__img-title">Мобильные  приложения</p></div>
+          </li>
+          <li class="craft__item">
+            <img src="./images/1/img3.jpg" alt="рабочее место разработчика ПО 3" width="370">
+            <div class="craft__bg-title"><p class="craft__img-title">Дизайнерские  решения</p></div>
+          </li>
         </ul>
       </section>
     <!-- Наша команда -->
@@ -306,49 +315,49 @@
           </li>
         </ul>
       </section>
-      <section class="section">
-        <div class="container clients">
+      <section class="clients">
+        <div class="container section">
           <h2 class="clients__title">Постоянные клиенты</h2>
-          <ul>
-            <li>
-              <a href="./index.html" class="client__link">
-                <svg class="client__icon">
+          <ul class="clients__items">
+            <li class="clients__item">
+              <a href="./index.html" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/icon/defs.svg#Client-1"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="./index.html" class="client__link">
-                <svg class="client__icon">
+            <li class="clients__item">
+              <a href="./index.html" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/icon/defs.svg#Client-2"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="./index.html" class="client__link">
-                <svg class="client__icon">
+            <li class="clients__item">
+              <a href="./index.html" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/icon/defs.svg#Client-3"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="./index.html" class="client__link">
-                <svg class="client__icon">
+            <li class="clients__item">
+              <a href="./index.html" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/icon/defs.svg#Client-4"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="./index.html" class="client__link">
-                <svg class="client__icon">
+            <li class="clients__item">
+              <a href="./index.html" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/icon/defs.svg#Client-5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
                 <!-- <div> -->
-                  <a href="./index.html" class="client__link">
-                    <svg class="client__icon">
+                  <a href="./index.html" class="clients__link">
+                    <svg class="clients__icon">
                       <use href="./images/icon/defs.svg#Client-6"></use>
                     </svg>
                   </a>
@@ -479,7 +488,7 @@
         <div class="modal__checkbox">
         <label class="modal__checklabel">
           <input class="checkbox" type="checkbox" name="check" >
-          <span class="icon-check"></span>
+          <span class="checkbox__icon"></span>
           Соглашаюсь с рассылкой и принимаю 
         </label>
         <a class="modal__link"> Условия договора</a>

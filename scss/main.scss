@@ -1,13 +1,23 @@
+/**BASA**/
 @import './utils/variable';
-@import './defolt/defolt';
+@import './defoult/defoult';
+@import './defoult/pageset';
+/**COMPONENTS**/
 @import './components/buttons';
+@import './components/inputs';
+@import './components/links';
+/**BLOCKS**/
+@import './blocks/logo';
+@import './blocks/nav';
+@import './blocks/contacts';
+@import './blocks/social';
+@import './blocks/team-card';
+/**LAYOUTS**/
 @import './layout/header';
-@import './components/logo';
-@import './components/nav';
-@import './components/contacts';
 @import './layout/hero';
 @import './layout/advantages';
 @import './layout/craft';
 @import './layout/developers';
-@import './components/social';
-@import './components/team-card';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/modal';

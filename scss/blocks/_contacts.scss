@@ -24,7 +24,8 @@
   } 
 
 &__link:hover {
-    stroke: $colorTxt-accent;
+    color: $colorTxt-accent;
+  stroke: $colorTxt-accent;
     fill: $colorTxt-accent;
   }
 }

@@ -1,3 +1,16 @@
 .footer{
     background-color: $colorBg-Dark;
+    //$colsocicon: #fff;
+    
+    &-section {
+        display: flex;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+      }
+    
+    &__socicon{
+        //$colsocicon: $colorTxt-Light;
+
+    }
 }

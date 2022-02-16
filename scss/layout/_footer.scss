@@ -1,16 +1,11 @@
-// @mixin socicon($colorTXT, $colorBg:#ffffff10) {
-//     fill: $colorTXT;
-//     background-color: $colorBg;
-//     color: $colorTXT;
-// } 
+
 .footer{
     background-color: $colorBg-Dark;
-    //$colsocicon: #fff;$colorTxt-socialLink
-    
-    // &__address{
-    //     margin-top: 20px;
-    //     font-style: normal;
-    //   }
+  .logo--down{
+      color: #ffffff;
+    }  
+
+
     .social-title {
         text-transform: uppercase;
         color: var(--white-txt-color);
@@ -33,14 +28,20 @@
       }  
     
     &__socicon{
-        $colsocicon: #fff;
+        fill: #fff;
 
     }
-    .social-footer {
-        width: 208px;
-        padding-top: 15px;
-        margin-left: 70px;
-      }
+
+
+}
+
+.social-footer {
+  width: 208px;
+  padding-top: 15px;
+  margin-left: 70px;
+}
+.social__link{
+  fill: #ffffff;
 }
 .address{
     margin-top: 20px;
@@ -57,9 +58,17 @@
   color: var(--footer-link-color, rgba(255, 255, 255, 0.6));
 }
 /**/
+.footer__title {
+  text-transform: uppercase;
+  color: var(--white-txt-color);
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+}
+
 .footer__email-foo {
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    //padding-bottom: 15px;
     width: 570px;
     height: 88px;
     margin-left: 93px;
@@ -112,11 +121,7 @@
     line-height: 1.87;
     margin-left: 12px;
     transition: 
-    /* transform 260ms cubic-bezier(0.4, 0, 0.2, 1)
-    ,  */
-    background-color 260ms cubic-bezier(0.4, 0, 0.2, 1)
-   
-    ;
+    background-color 260ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .footer__email-foo > div > button:hover {
@@ -124,9 +129,7 @@
     background: #188ce8;
     border: 1px solid #188ce8;
     /* transform: rotate(360deg); */
-    transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1)
-    , fill 1260ms cubic-bezier(0.4, 0, 0.2, 1)
-    ;
+    transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), fill 1260ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .botton__icon {

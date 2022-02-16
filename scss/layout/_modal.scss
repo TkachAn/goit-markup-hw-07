@@ -16,7 +16,8 @@
     opacity: 1;
     transition: transform 260ms linear, opacity 260ms linear;
   }
-  
+
+  .button__close,
   .btn-modal {
     outline-style: none;
     padding: 0;
@@ -30,7 +31,7 @@
     border: 1px solid #00000033;
     background-color: #ffffff;
   }
-  
+  .modal-close,
   .close-form {
     display: block;
     width: 20px;
@@ -40,7 +41,19 @@
     transition: fill 260ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
   }
-  
+  .modal-icon,
+  .icon-modal {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 10px;
+    fill: #212121;
+    transition: fill 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-close:focus,
+  .modal-close:hover,
   .btn-modal:focus,
   .close-form:focus,
   .close-form:hover {
@@ -88,7 +101,25 @@
     transition: border 260ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .cont-textarea,
+
+  .modal-textarea {
+    display: block;
+    // position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 120px;
+    padding-left: 40px;
+    padding-top: 10px;
+    overflow: hidden;
+    resize:none;
+    transition: border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  // .cont-textarea,
   .modal > ul > li {
     position: relative;
   }
@@ -96,8 +127,13 @@
   .modal > ul > li + li {
     margin-top: 28px;
   }
-  
+  .dd{
+    position: relative;
+  }
+
+
   /* .cont-textarea > label, */
+  .modal-labelarea,
   .modal > ul > li label {
     position: absolute;
     left: 60px;
@@ -113,17 +149,7 @@
       cursor: pointer;
   }
   
-  .icon-modal {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 12px;
-    top: 10px;
-    fill: #212121;
-    transition: fill 260ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .cont-textarea > label {
+  .modal-labelarea {
     position: absolute;
     transform: translate(0%, 0%) scale(150%);
     font-size: 14px;
@@ -133,33 +159,17 @@
     top: 13px;
     left: 60px;
     transition: transform 260ms  cubic-bezier(0.4, 0, 0.2, 1), color 260ms linear;
-  ;
   }
-  .modal > div > textarea {
-    display: block;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 28px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 120px;
-    padding-left: 40px;
-    padding-top: 10px;
-    overflow: hidden;
-    resize:none;
-    transition: border 260ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .cont-textarea > textarea:focus + label,
-  .cont-textarea > textarea:not(:placeholder-shown) + label,
+
+  .modal-textarea:not(:placeholder-shown) + label,
+  .modal-textarea:focus + label,
   .modal > ul > li input:not(:placeholder-shown) + label,
   .modal > ul > li input:focus + label {
     outline-style: none;
     transform: translate(-60px, -30px) scale(100%);
   }
   
-  .cont-textarea > textarea::placeholder,
+  .modal-textarea::placeholder,
   .modal > ul > li input::placeholder {
     outline-style: none;
     color: #2196f3;
@@ -168,31 +178,31 @@
   , color 260ms cubic-bezier(0.4, 0, 0.2, 1);
   }
    
-  .cont-textarea > textarea:focus::placeholder,
+  .modal-textarea:focus::placeholder,
   .modal > ul > li input:focus::placeholder {
     outline-style: none;
     color: #afb1b8;
     transform: translate(0, 0);
   }
   
-  .cont-textarea > textarea:focus,
-  .cont-textarea > textarea:hover,
+  .modal-textarea:focus,
+  .modal-textarea:hover,
   .modal > ul > li input:focus,
   .modal > ul > li input:hover {
     outline-style: none;
     border-color: #2196f3;
   }
   
-  .cont-textarea > textarea:hover + label,
-  .cont-textarea > textarea:focus + label,
+  .modal-textarea:hover + label,
+  .modal-textarea:focus + label,
   .modal > ul > li input:focus + label,
   .modal > ul > li input:hover + label {
     outline-style: none;
     color: #2196f3;
   }
   
-  .modal > ul > li input:focus ~ .icon-modal,
-  .modal > ul > li input:hover ~ .icon-modal {
+  .modal > ul > li input:focus ~ .modal-icon,
+  .modal > ul > li input:hover ~ .modal-icon {
     fill: #2196f3;
   }
   
@@ -258,7 +268,7 @@
     background-image: url(../images/icon/svgM/Vector1.svg);
   }
   
-  .us {
+  .modal__link {
     color: #2196f3;
     text-decoration:none;
     margin-left: 10px;
@@ -266,7 +276,7 @@
     /* , text-decoration 1260ms cubic-bezier(0.4, 0, 0.2, 1) */
     ;
   }
-  .us:hover {
+  .modal__link:hover {
     color: #188ce8;
     text-decoration: underline;
     cursor: pointer;

@@ -1,5 +1,10 @@
-@import '../mainmod.scss';
-// socialLink $colorTxt-socialLink
+// @import '../mainmod.scss';
+// // socialLink $colorTxt-socialLink
+// @mixin socicon($colorTXT, $colorBg:#ffffff10) {
+//   fill: $colorTXT;
+//   background-color: $colorBg;
+//   color: $colorTXT;
+//} 
 .social{
     display: flex;
     justify-content: space-between;
@@ -12,13 +17,14 @@
         width: 44px;
         height: 44px;
         border-radius: 50%;
-        @include socicon($colorTXT: $colsocicon);
+        fill: $colorTxt-socialLink;
+        background-color: #ffffff10;
+        //color: $colorTxt-socialLink;
     }
 
     &__link:focus,
     &__link:hover {
       background-color: $colorTxt-accent;
-      color: #ffffff;
       fill: #ffffff;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }

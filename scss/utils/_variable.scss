@@ -13,7 +13,13 @@ $colorTxt-forlinkDarkBg: #ffffff99;
 $colorTxt-socialLink: #afb1b8;
 $colorTxt-forlinkLightBg: #212121;
 $colorTxt-accent: #2196f3;
-
+@mixin socexist {
+  @if & {
+    $colsocicon: #afb1b8;
+  } @else {
+    $colsocicon: #fff;
+  }
+}
 /*for BG*/
 $colorBg-primary: #2f303a;
 $colorBg-secondary: #f5f4fa;

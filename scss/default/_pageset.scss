@@ -31,8 +31,3 @@ a {
     // transition: color 250ms $cubic;
   }
 
-  @mixin socicon($colorTXT, $colorBg:#ffffff10) {
-    fill: $colorTXT;
-    background-color: $colorBg;
-    color: $colorTXT;
-} 

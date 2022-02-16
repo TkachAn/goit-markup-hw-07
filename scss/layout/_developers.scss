@@ -1,3 +1,8 @@
+@mixin socicon($colorTXT, $colorBg:#ffffff10) {
+    fill: $colorTXT;
+    background-color: $colorBg;
+    color: $colorTXT;
+} 
 .developers {
 
     background-color: $colorBg-secondary;

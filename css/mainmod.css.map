@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/mainmod.scss"
+    ],
+    "names": [],
+    "file": "mainmod.css"
+}

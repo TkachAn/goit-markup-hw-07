@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**colors**/
 /**********/
 /*for text & links*/
@@ -24,10 +25,9 @@ li {
   list-style-type: none;
 }
 
-h1,
-h2,
-h3,
-h4,
+html,
+body,
+ol,
 ul,
 li,
 p {
@@ -38,6 +38,14 @@ p {
 img {
   display: block;
   max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
 }
 
 .container {
@@ -278,21 +286,24 @@ a {
   height: 44px;
 }
 
-.social__block {
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border-color: darkgray;
+  fill: red;
+  background-color: #ffffff10;
+  color: red;
 }
 
-.social__link {
-  display: block;
-  fill: #afb1b8;
-}
-
-.social__icon {
-  width: 44px;
-  height: 44px;
+.social__link:focus, .social__link:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+  fill: #ffffff;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-card {
@@ -544,5 +555,380 @@ a {
 
 .footer {
   background-color: #2f303a;
+}
+
+.footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/**/
+.modal {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(100%);
+          transform: translate(-50%, -50%) scale(100%);
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  opacity: 1;
+  -webkit-transition: opacity 260ms linear, -webkit-transform 260ms linear;
+  transition: opacity 260ms linear, -webkit-transform 260ms linear;
+  transition: transform 260ms linear, opacity 260ms linear;
+  transition: transform 260ms linear, opacity 260ms linear, -webkit-transform 260ms linear;
+}
+
+.btn-modal {
+  outline-style: none;
+  padding: 0;
+  position: absolute;
+  display: block;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #00000033;
+  background-color: #ffffff;
+}
+
+.close-form {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  /* fill: #212121; */
+  -webkit-transition: fill 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.btn-modal:focus,
+.close-form:focus,
+.close-form:hover {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.modal > b {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  -webkit-transition: after 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: after 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-tooltip] {
+  position: relative;
+  /* Относительное позиционирование */
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  /* <abbr title="I'm small tooltip. Don't kill me!">Hover me!</abbr> */
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #2196f360;
+  pointer-events: none;
+  opacity: 0;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  top: 54px;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.modal > ul > li input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  /* #2196F3 */
+  padding-left: 40px;
+  -webkit-transition: border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cont-textarea,
+.modal > ul > li {
+  position: relative;
+}
+
+.modal > ul > li + li {
+  margin-top: 28px;
+}
+
+/* .cont-textarea > label, */
+.modal > ul > li label {
+  position: absolute;
+  left: 60px;
+  top: 12px;
+  -webkit-transform: translate(0%, 0%) scale(150%);
+          transform: translate(0%, 0%) scale(150%);
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #c4c4c4;
+  left: 60px;
+  -webkit-transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), transform 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.icon-modal {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 10px;
+  fill: #212121;
+  -webkit-transition: fill 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cont-textarea > label {
+  position: absolute;
+  -webkit-transform: translate(0%, 0%) scale(150%);
+          transform: translate(0%, 0%) scale(150%);
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #c4c4c4;
+  top: 13px;
+  left: 60px;
+  -webkit-transition: color 260ms linear, -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 260ms linear, -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), color 260ms linear;
+  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), color 260ms linear, -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal > div > textarea {
+  display: block;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 28px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 120px;
+  padding-left: 40px;
+  padding-top: 10px;
+  overflow: hidden;
+  resize: none;
+  -webkit-transition: border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cont-textarea > textarea:focus + label,
+.cont-textarea > textarea:not(:placeholder-shown) + label,
+.modal > ul > li input:not(:placeholder-shown) + label,
+.modal > ul > li input:focus + label {
+  outline-style: none;
+  -webkit-transform: translate(-60px, -30px) scale(100%);
+          transform: translate(-60px, -30px) scale(100%);
+}
+
+.cont-textarea > textarea::-webkit-input-placeholder,
+.modal > ul > li input::-webkit-input-placeholder {
+  outline-style: none;
+  color: #2196f3;
+  -webkit-transform: translate(-220px, 0);
+          transform: translate(-220px, 0);
+  -webkit-transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), color 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cont-textarea > textarea:-ms-input-placeholder,
+.modal > ul > li input:-ms-input-placeholder {
+  outline-style: none;
+  color: #2196f3;
+  transform: translate(-220px, 0);
+  -webkit-transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), color 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cont-textarea > textarea::-ms-input-placeholder,
+.modal > ul > li input::-ms-input-placeholder {
+  outline-style: none;
+  color: #2196f3;
+  transform: translate(-220px, 0);
+  -webkit-transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), color 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cont-textarea > textarea::placeholder,
+.modal > ul > li input::placeholder {
+  outline-style: none;
+  color: #2196f3;
+  -webkit-transform: translate(-220px, 0);
+          transform: translate(-220px, 0);
+  -webkit-transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), color 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 260ms cubic-bezier(0.4, 0, 0.2, 1), color 260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cont-textarea > textarea:focus::-webkit-input-placeholder,
+.modal > ul > li input:focus::-webkit-input-placeholder {
+  outline-style: none;
+  color: #afb1b8;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.cont-textarea > textarea:focus:-ms-input-placeholder,
+.modal > ul > li input:focus:-ms-input-placeholder {
+  outline-style: none;
+  color: #afb1b8;
+  transform: translate(0, 0);
+}
+
+.cont-textarea > textarea:focus::-ms-input-placeholder,
+.modal > ul > li input:focus::-ms-input-placeholder {
+  outline-style: none;
+  color: #afb1b8;
+  transform: translate(0, 0);
+}
+
+.cont-textarea > textarea:focus::placeholder,
+.modal > ul > li input:focus::placeholder {
+  outline-style: none;
+  color: #afb1b8;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.cont-textarea > textarea:focus,
+.cont-textarea > textarea:hover,
+.modal > ul > li input:focus,
+.modal > ul > li input:hover {
+  outline-style: none;
+  border-color: #2196f3;
+}
+
+.cont-textarea > textarea:hover + label,
+.cont-textarea > textarea:focus + label,
+.modal > ul > li input:focus + label,
+.modal > ul > li input:hover + label {
+  outline-style: none;
+  color: #2196f3;
+}
+
+.modal > ul > li input:focus ~ .icon-modal,
+.modal > ul > li input:hover ~ .icon-modal {
+  fill: #2196f3;
+}
+
+.modal > button[type="submit"] {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  padding: 10px 55px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  -webkit-transition: background-color 260ms cubic-bezier(0.4, 0, 0.2, 1), border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 260ms cubic-bezier(0.4, 0, 0.2, 1), border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal > button[type="submit"]:hover {
+  background: #188ce8;
+  cursor: pointer;
+}
+
+.modal__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.check-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: inline-block;
+}
+
+.icon-check {
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-transition: background-color 260ms cubic-bezier(0.4, 0, 0.2, 1), border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 260ms cubic-bezier(0.4, 0, 0.2, 1), border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.checkbox:focus + .icon-check,
+.checkbox:hover + .icon-check {
+  border: 2px solid #2196f3;
+}
+
+.checkbox:checked + .icon-check {
+  background-color: #2196f3;
+  border: 2px solid #2196f3;
+  background-image: url(../images/icon/svgM/Vector1.svg);
+}
+
+.us {
+  color: #2196f3;
+  text-decoration: none;
+  margin-left: 10px;
+  -webkit-transition: all 1260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.us:hover {
+  color: #188ce8;
+  text-decoration: underline;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

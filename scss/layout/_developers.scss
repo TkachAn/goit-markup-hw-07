@@ -1,13 +1,13 @@
-@mixin socicon($colorTXT, $colorBg:#ffffff10) {
-    fill: $colorTXT;
-    background-color: $colorBg;
-    color: $colorTXT;
-} 
+// @mixin socicon($colorTXT, $colorBg:#ffffff10) {
+//     fill: $colorTXT;
+//     background-color: $colorBg;
+//     color: $colorTXT;
+// } 
 .developers {
 
     background-color: $colorBg-secondary;
     // $col-soc-icon: $colorTxt-socialLink;
-    $colsocicon: $colorTxt-accent;
+    // $colsocicon: $colorTxt-accent;
 
     &__title{
         color: $colorTxt-secondary;
@@ -15,6 +15,7 @@
         line-height: 1.17;
         text-align: center;
         padding-bottom: 50px;
+        // fill: $colorTxt-socialLink;
     }
 
     //&team-card__position
@@ -23,4 +24,6 @@
         display: flex;
         justify-content: space-between;
     }
+
+
 }

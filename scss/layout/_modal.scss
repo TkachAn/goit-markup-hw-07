@@ -1,3 +1,4 @@
+
 /**/
 
 .modal {
@@ -83,7 +84,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  /* #2196F3 */
+  ///* #2196F3 */
   padding-left: 40px;
   transition: border 260ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -97,7 +98,7 @@
   margin-top: 28px;
 }
 
-/* .cont-textarea > label, */
+// .cont-textarea > label,
 .modal > ul > li label {
   position: absolute;
   left: 60px;
@@ -108,7 +109,6 @@
   letter-spacing: 0.01em;
   color:  #c4c4c4;
   left: 60px;
-  transition: ;
   transition: color 260ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 260ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
@@ -134,7 +134,6 @@
   top: 13px;
   left: 60px;
   transition: transform 260ms  cubic-bezier(0.4, 0, 0.2, 1), color 260ms linear;
-;
 }
 .modal > div > textarea {
   display: block;
@@ -165,15 +164,16 @@
 .modal > ul > li input::placeholder {
   outline-style: none;
   color: #2196f3;
+  opacity: 0;
   transform: translate(-220px, 0);
-  transition: transform 260ms  cubic-bezier(0.4, 0, 0.2, 1);
-, color 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 260ms  cubic-bezier(0.4, 0, 0.2, 1), color 260ms cubic-bezier(0.4, 0, 0.2, 1), opacity 560ms linear;
 }
  
 .cont-textarea > textarea:focus::placeholder,
 .modal > ul > li input:focus::placeholder {
   outline-style: none;
   color: #afb1b8;
+  opacity: 1;
   transform: translate(0, 0);
 }
 
@@ -260,7 +260,7 @@ display: flex;
   background-image: url(../images/icon/svgM/Vector1.svg);
 }
 
-.us {
+.modal__us {
   color: #2196f3;
   text-decoration:none;
   margin-left: 10px;
@@ -268,7 +268,7 @@ display: flex;
   /* , text-decoration 1260ms cubic-bezier(0.4, 0, 0.2, 1) */
   ;
 }
-.us:hover {
+.modal__us:hover {
   color: #188ce8;
   text-decoration: underline;
   cursor: pointer;

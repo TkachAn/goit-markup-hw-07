@@ -1,10 +1,3 @@
-// @import '../mainmod.scss';
-// // socialLink $colorTxt-socialLink
-// @mixin socicon($colorTXT, $colorBg:#ffffff10) {
-//   fill: $colorTXT;
-//   background-color: $colorBg;
-//   color: $colorTXT;
-//} 
 .social{
     display: flex;
     justify-content: space-between;
@@ -17,9 +10,10 @@
         width: 44px;
         height: 44px;
         border-radius: 50%;
-        fill: $colorTxt-socialLink;
+        //fill: inherit;
+        fill: currentColor;
         background-color: #ffffff10;
-        //color: $colorTxt-socialLink;
+        color: $colorTxt-socialLink;
     }
 
     &__link:focus,

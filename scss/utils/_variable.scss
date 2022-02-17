@@ -42,7 +42,7 @@ $colorBtnBdr-hover: #188ce8;
 
 /*for border*/
 
-//$colorBorder-default: #eee;
+$colorBorder: #eee;
 $colorBorder-default: #ececec;
 $colorBtn-secondaryBorder: #eeeeee;
 $colorBtn-placeholder: #afb1b8;
@@ -54,3 +54,6 @@ $shadow-drop: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 /*modal*/
 $borderInputColor: rgba(33, 33, 33, 0.2);
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
+/**/
+$col: 3;
+$gap: 28px;

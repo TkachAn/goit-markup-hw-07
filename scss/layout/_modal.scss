@@ -62,11 +62,11 @@
 
 
 [data-tooltip] {
-    position: relative; /* Относительное позиционирование */ 
+    position: relative;
    }
    [data-tooltip]::after {
     content: attr(data-tooltip);
-    /* <abbr title="I'm small tooltip. Don't kill me!">Hover me!</abbr> */
+    
     position: absolute;
     right: 0; top: 0;
     color: #2196f360;
@@ -133,7 +133,7 @@
   color:  #c4c4c4;
   top: 13px;
   left: 60px;
-  transition: transform 260ms  cubic-bezier(0.4, 0, 0.2, 1), color 260ms linear;
+  transition: transform 260ms  $cubic, color 260ms linear;
 }
 .modal > div > textarea {
   display: block;
@@ -148,7 +148,7 @@
   padding-top: 10px;
   overflow: hidden;
   resize:none;
-  transition: border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 260ms $cubic;
 }
 
 .cont-textarea > textarea:focus + label,
@@ -166,7 +166,7 @@
   color: #2196f3;
   opacity: 0;
   transform: translate(-220px, 0);
-  transition: transform 260ms  cubic-bezier(0.4, 0, 0.2, 1), color 260ms cubic-bezier(0.4, 0, 0.2, 1), opacity 560ms linear;
+  transition: transform 260ms  $cubic, color 260ms $cubic, opacity 560ms linear;
 }
  
 .cont-textarea > textarea:focus::placeholder,
@@ -213,8 +213,8 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  transition: background-color 260ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 260ms $cubic,
+    border 260ms $cubic;
 }
 
 .modal > button[type="submit"]:hover {
@@ -244,8 +244,8 @@ display: flex;
   border: 2px solid #212121;
   border-radius: 2px;
   background-color: #ffffff;
-  transition: background-color 260ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 260ms $cubic,
+    border 260ms $cubic;
     cursor: pointer;
 }
 .checkbox:focus + .icon-check,
@@ -264,9 +264,7 @@ display: flex;
   color: #2196f3;
   text-decoration:none;
   margin-left: 10px;
-  transition: all 1260ms cubic-bezier(0.4, 0, 0.2, 1)
-  /* , text-decoration 1260ms cubic-bezier(0.4, 0, 0.2, 1) */
-  ;
+  transition: all 1260ms $cubic;
 }
 .modal__us:hover {
   color: #188ce8;

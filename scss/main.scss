@@ -1,5 +1,6 @@
 //**BASA**/
 @import './utils/variable';
+@import './utils/mixins';
 @import './default/default';
 @import './default/pageset';
 //**COMPONENTS**/
@@ -28,3 +29,5 @@
 @import './layout/clients';
 @import './layout/footer';
 @import './layout/modal';
+@import './layout2/filter';
+@import './layout2/grid';

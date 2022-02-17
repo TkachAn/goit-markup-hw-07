@@ -12,73 +12,74 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 
   </head>
 <!-- body -->
   <body>
-  <!-- header -->
+<!-- header -->
     <header class="header">
       <div class="container header__container">
-      <a class="logo header__logo" href="./index.html">
-        <span>Web</span><span class="logo--up">Studio</span></a>
-      <!-- navigation -->
-      <nav class="header__nav">
-        <ul class="nav">
-    
-          <li class="nav-after">
-            <a class="nav__link" href="./index.html">Студия</a>
+<!-- logo -->        
+        <a class="header__logo logo" href="./index.html">
+          <span>Web</span><span class="logo--up">Studio</span>
+        </a>
+<!-- navigation -->
+        <nav class="header__nav">
+          <ul class="nav">
+      
+            <li class="nav-after ">
+              <a class="nav__link" href="./index.html">Студия</a>
+            </li>
+      
+            <li>
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+      
+            <li>
+              <a class="nav__link" href="./contakts.html">Контакты</a>
+            </li>
+      
+          </ul>
+        </nav>
+<!-- contacsts -->
+        <ul class="header__contacts contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon envelope">
+                <use href="./images/icon/defs.svg#a-envelope"></use>
+              </svg>
+              <span class="mail">info@devstudio.com</span>
+            </a>
           </li>
-    
-          <li>
-            <a class="nav__link" href="./portfolio.html">Портфолио</a>
+      
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon smartphone">
+                <use href="./images/icon/defs.svg#a-smartphone"></use>
+              </svg>
+              <span class="tel"> +38 096 111 11 11</span>
+            </a>
           </li>
-    
-          <li>
-            <a class="nav__link" href="./contakts.html">Контакты</a>
-          </li>
-    
         </ul>
-        
-      </nav>
-      <!-- contacsts -->
-      <ul class="header__contacts contacts">
-        <li class="contacts__item">
-          <a class="contacts__link" href="mailto:info@devstudio.com">
-            <svg class="contacts-icon envelope">
-              <use href="./images/icon/defs.svg#a-envelope"></use>
-            </svg>
-            <span class="mail">info@devstudio.com</span>
-          </a>
-        </li>
-    
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:+380961111111">
-            <svg class="contacts-icon smartphone">
-              <use href="./images/icon/defs.svg#a-smartphone"></use>
-            </svg>
-            <span class="tel"> +38 096 111 11 11</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+      </div>
     </header>
-  <!-- main  class="section"-->
+<!-- main  class="section"-->
     <main>
-    <!-- hero -->
+<!-- hero -->
       <section class="hero section">
         <h1 class="hero-title">
           Эффективные решения <br> для вашего бизнеса
         </h1>
-        <button class="button__hero button" type="button" data-modal-open>
+        <button class="button__main button" type="button" data-modal-open>
           Заказать услугу
         </button>
       </section>
-    <!-- Особенности advantages <h2>Особенности</h2>-->
+<!-- Особенности advantages <h2>Особенности</h2>-->
       <section class="container advantages">
         <h2 class="invisible">Особенности</h2>
         <ul class="advantages__list">
-        <!-- Внимание к деталям -->
+<!-- Внимание к деталям -->
           <li class="advantages__feature">
             <div class="advantages__group">
               <svg class="advantages__icon">
@@ -88,7 +89,7 @@
             <h3 class="advantages__title-grup">Внимание к деталям</h3>
             <p class="advantages__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
-        <!-- Пунктуальность -->
+<!-- Пунктуальность -->
           <li class="advantages__feature">
             <div class="advantages__group">
               <svg class="advantages__icon">
@@ -120,7 +121,7 @@
           </li>
         </ul>
       </section>
-    <!-- Чем мы занимаемся -->
+<!-- Чем мы занимаемся -->
       <section class="craft section">
         <h2 class="craft__title">Чем мы занимаемся</h2>
         <ul class="container craft__gallery">
@@ -138,12 +139,12 @@
           </li>
         </ul>
       </section>
-    <!-- Наша команда -->
+<!-- Наша команда -->
       <section class="developers section">
        <h2 class="developers__title">Наша команда</h2>
         <ul class="container developers__list">
-        <!-- Михаил Ермаков -->
-          <li class="team-card">
+<!-- Михаил Ермаков -->
+          <li class="developers__team-card team-card">
             <img class="team-card__img" src="./images/1/img_erm.jpg" alt="Михаил Ермаков" width="270">
           <div class="team-card__footer"><p class="team-card__position"><span class="team-card__name">Михаил Ермаков</span><br>UI Designer</p></div>
             <div class="team-card__title">
@@ -183,8 +184,8 @@
               </ul>
             </div>
           </li>
-        <!-- Николай Тарасов -->
-          <li class="team-card">
+<!-- Николай Тарасов -->
+          <li class="developers__team-card team-card">
             <img class="team-card__img" src="./images/1/img_tar.jpg" alt="Николай Тарасов" width="270">
           <div class="team-card__footer"><p class="team-card__position">
               <span class="team-card__name"><!--or teg <span> + class = "team-member-names"-->
@@ -227,8 +228,8 @@
               </ul>
             </div>
           </li>
-        <!-- Ольга Репина -->
-          <li class="team-card">
+<!-- Ольга Репина -->
+          <li class="developers__team-card team-card">
             <img class="team-card__img" src="./images/1/img_rep.jpg" alt="Ольга Репина" width="270">
           <div class="team-card__footer"><p class="team-card__position">
               <span class="team-card__name">Ольга Репина</span><br>Frontend Developer</p></div>
@@ -269,8 +270,8 @@
               </ul>
             </div>
           </li>
-        <!-- Игорь Демьяненко -->
-          <li class="team-card">
+<!-- Игорь Демьяненко -->
+          <li class="developers__team-card team-card">
             <img class="team-card__img"  src="./images/1/img_dem.jpg" alt="Игорь Демьяненко" width="270">
             <div class="team-card__footer">
               <p class="team-card__position">
@@ -355,26 +356,25 @@
               </a>
             </li>
             <li class="clients__item">
-                <!-- <div> -->
+<!-- <div> -->
                   <a href="./index.html" class="clients__link">
                     <svg class="clients__icon">
                       <use href="./images/icon/defs.svg#Client-6"></use>
                     </svg>
                   </a>
-                  
-                <!-- </div> -->
+<!-- </div> -->
             </li>
           </ul>
         </div>
       </section>
     </main>
-  <!-- footer -->
+<!-- footer -->
     <footer class="footer">
       <div class="container footer-section">
         <div>
           <a class="logo footer__logo" href="./index.html">
             <span>Web</span><span class="logo--down">Studio</span></a>
-            <!-- address -->
+<!-- address -->
           <address class="footer__address">
             <ul class="address">
               <li>
@@ -432,11 +432,11 @@
         </div>
         <div class="footer__email-foo">
           <h3 class="footer__title">Подпишитесь на рассылку</h3>
-          <div>
+          <div class="footer__send send">
             <label for="email-label">E-mail:</label>
-            <input type="email" name="email" id="email-foo" 
+            <input class="email" type="email" name="email" id="email-foo" 
             placeholder="info@devstudio.com" >
-            <button class="button__submit button" type="submit" >Подписаться
+            <button class="button__main button" type="submit" >Подписаться
               <svg class="botton__icon">
                 <use href="./images/icon/m-defs.svg#icon-send"></use>
               </svg>
@@ -484,7 +484,7 @@
           <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
           <label for="comment">Комментарий</label>
         </div>
-        <!-- id="check" -->
+<!-- id="check" -->
         <div class="modal__checkbox">
         <label class="check-modal">
           <input class="checkbox" type="checkbox" name="check" >

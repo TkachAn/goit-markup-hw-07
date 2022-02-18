@@ -254,12 +254,12 @@
     </main>
   <!-- footer -->
   <footer class="footer">
-    <div class="container footer-section">
+    <div class="container footer__section">
       <div>
-        <a class="logo footer__logo" href="./index.html">
+        <a class="logo" href="./index.html">
           <span>Web</span><span class="logo--down">Studio</span></a>
 <!-- address -->
-        <address class="footer__address">
+        <address class="footer__address-postion">
           <ul class="address">
             <li>
               <a class="address__map" href="https://goo.gl/maps/sbAjd5FBp9YJ9pFS9">
@@ -277,50 +277,49 @@
           </ul>
         </address>
       </div>
-      <div class="footer__social">
-        <h3 class="social-title">присоединяйтесь</h3>
-        <ul class="social footer__socicon">
-          <li class="social__item">
-            <a class="social__link" href="./index.html">
-              <svg class="social__icon footer--colicondfoo instagram">
-                <use href="./images/icon/defs.svg#s-instagram"></use>
-              </svg>
-            </a>
-          </li>
-        
-          <li class="social__item">
-            <a class="social__link" href="./index.html">
-              <svg class="social__icon  footer--colicondfoo twitter">
-                <use href="./images/icon/defs.svg#s-twitter"></use>
-              </svg>
-            </a>
-        
-          </li>
-        
-          <li class="social__item">
-            <a class="social__link" href="./index.html">
-              <svg class="social__icon  footer--colicondfoo facebook">
-                <use href="./images/icon/defs.svg#s-facebook"></use>
-              </svg>
-            </a>
-          </li>
-        
-          <li class="social__item">
-            <a class="social__link" href="./index.html">
-              <svg class="social__icon  footer--colicondfoo linkedin">
-                <use href="./images/icon/defs.svg#s-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__email-foo">
-        <h3 class="footer__title">Подпишитесь на рассылку</h3>
-        <div class="footer__send send">
+      <div class="footer__socbox-postion socbox">
+        <h3 class="socbox__title">присоединяйтесь</h3>
+          <ul class="socbox__flex">
+            <li>
+              <a href="https://about.instagram.com/">
+                <svg class="socbox__icon instagram">
+                  <use href="./images/icon/defs.svg#s-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://twitter.com/">
+                <svg class="socbox__icon twitter">
+                  <use href="./images/icon/defs.svg#s-twitter"></use>
+                </svg>
+              </a>
+          
+            </li>
+          
+            <li>
+              <a href="https://www.facebook.com/">
+                <svg class="socbox__icon facebook">
+                  <use href="./images/icon/defs.svg#s-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://www.linkedin.com/">
+                <svg class="socbox__icon linkedin">
+                  <use href="./images/icon/defs.svg#s-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      <div class="footer__subscription-postion subscription">
+        <h3 class="subscription__title">Подпишитесь на рассылку</h3>
+        <div class="subscription__position-el">
           <label for="email-label">E-mail:</label>
-          <input class="email" type="email" name="email" id="email-foo" 
-          placeholder="info@devstudio.com" >
-          <button class="button__main button" type="submit" >Подписаться
+          <input class="subscription__email-input--sub type="email" name="email" placeholder="info@devstudio.com" >
+          <button class="subscription__button button__main button" type="submit" >Подписаться
             <svg class="botton__icon">
               <use href="./images/icon/m-defs.svg#icon-send"></use>
             </svg>

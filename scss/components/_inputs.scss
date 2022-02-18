@@ -1,6 +1,5 @@
 %input--base{
     display: block;
-    border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
     transition: border 260ms $cubic;
@@ -8,21 +7,50 @@
 
     // } 
 }
+%input-size-sub {
+    width: 358px;
+    height: 50px;
+    padding-left: 65px;
+}
+%input-color{
+    color: $colorMaxLight;
+    background-color: transparent;
+}  
 
-%input--mod {
+%input--sub{
+    @extend %input--base;
+    @extend %input-size-sub;
+    @extend %input-color;
+    border-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    //box-shadow: $shadow-drop;
+    &:hover,
+    &:focus {
+        border: 1px solid #188ce8;
+      }
+}
+
+%input-size-mod {
     width: 100%;
     height: 40px;
+}
+%textarea-size-mod {
+    width: 100%;
+    height: 120px;
+    padding-top: 10px;
+}
+
+%input--mod {
+    @extend %input--base;
+    @extend %input-size-mod;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
     padding-left: 40px;
-    transition: border 260ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 260ms $cubic;
   }
 
 %textarea{
     @extend %input--mod;
-    padding-top: 10px;
-    height: 120px;
+    @extend %textarea-size-mod;
     overflow: hidden;
     resize:none;
     //margin-top: 28px;

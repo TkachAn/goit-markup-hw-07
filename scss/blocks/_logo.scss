@@ -10,14 +10,11 @@
     color: $colorTxt-accent;
     padding: 0;
   
-  &--up {
-     margin: 0; 
-    padding: 0;
-      display: inline-block;
-    color: $colorTxt-forlinkLightBg;
-  }
-  
-  &--down {
-    color: $colorTxt-forlinkDarkBg;
-  }
 } 
+.logo--up {
+  color: $colorTxt-forlinkLightBg;
+}
+.logo--down {
+  color: $colorMaxLight;
+  //  $colorTxt-forlinkDarkBg;
+}

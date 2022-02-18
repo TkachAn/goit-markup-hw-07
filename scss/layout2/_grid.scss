@@ -30,7 +30,7 @@
   .catalog-card:hover .overlay,
   .catalog-card:hover .overlay-p {
     transform: translatex(0);
-    color: var(--white-txt-color);
+    color: $colorTxt-Light;
   }
   
   .overlay {
@@ -41,7 +41,7 @@
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
     transform: translatey(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms $cubic;
   }
   
   .overlay-p {
@@ -57,13 +57,12 @@
     padding: 10px;
     margin: 0;
     transform: translatey(100%);
-    transition: transform 360ms linear, color 400ms linear 100ms;
+    transition: transform 360ms linear, color 400ms $cubic;
   }
   
   .catalog-card:focus,
   .catalog-card:hover {
-    box-shadow: /*0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),*/ 0px
-      4px 4px #00000040;
+    box-shadow: $shadow-box;
   }
   
   .catalog-card p {
@@ -73,7 +72,7 @@
   }
   
   .h3catCard {
-    color: var(--secondary-txt-color, #212121);
+    color: var(--secondary-txt-color, $colorTxt-secondary);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;

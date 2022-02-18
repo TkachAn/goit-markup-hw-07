@@ -8,6 +8,7 @@
 
     &__link {
         display: block;
+        color: $colorTxt-secondary;
         padding-top: 32px;
         padding-bottom: 32px;
       }
@@ -31,23 +32,3 @@
       }  
 }
 
-//   .nav-after {
-//     position: relative; /* content: ""; */
-//     background-image: url(../images/2/line-portfolio.svg);
-//     background-position: right bottom;
-//   }
-  
-//   .nav-after::after {
-//     position: absolute;
-//     color: transparent;
-//     content: "0";
-//     display: block;
-//   }
-  
-//   .nav__link {
-//   display: block;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-// }
-
-//transition: color 250ms $cubic;

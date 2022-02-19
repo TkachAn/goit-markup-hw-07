@@ -1,62 +1,76 @@
-%input--base{
-    display: block;
-    box-sizing: border-box;
-    border-radius: 4px;
-    transition: border 260ms $cubic;
-    // &:hover {
-
-    // } 
-}
-%input-size-sub {
-    width: 358px;
-    height: 50px;
-    padding-left: 65px;
-}
-%input-color{
-    color: $colorMaxLight;
-    background-color: transparent;
-}  
 
 %input--sub{
-    @extend %input--base;
-    @extend %input-size-sub;
-    @extend %input-color;
-    border-style: none;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    //box-shadow: $shadow-drop;
+    @extend %mod-base;
+    @extend %mod-size-sub;
+    @extend %mod-color-sub;
+    @extend %mod-sub;
     &:hover,
     &:focus {
         border: 1px solid #188ce8;
       }
 }
 
-%input-size-mod {
+%input-modal {
+    @extend %mod-base;
+    @extend %mod-size-mod-i;
+    @extend %mod-modal;
+    &:hover,
+    &:focus {
+        border: 1px solid #188ce8;
+      }
+  }
+%textarea-modal {
+    @extend %mod-base;
+    @extend %mod-size-mod-a;
+    @extend %mod-modal;
+    overflow: hidden;
+    resize:none;
+    &:hover,
+    &:focus {
+        border: 1px solid #188ce8;
+      }  
+}
+
+%mod-size-mod-i {
     width: 100%;
     height: 40px;
 }
-%textarea-size-mod {
+%mod-size-mod-a {
     width: 100%;
     height: 120px;
     padding-top: 10px;
 }
 
-%input--mod {
-    @extend %input--base;
-    @extend %input-size-mod;
+%mod-modal {
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 40px;
     transition: border 260ms $cubic;
-  }
+}
 
-%textarea{
-    @extend %input--mod;
-    @extend %textarea-size-mod;
-    overflow: hidden;
-    resize:none;
-    //margin-top: 28px;
-    //margin-bottom: 20px;
+%mod-size-sub {
+    width: 358px;
+    height: 50px;
+    padding-left: 65px;
+}
+
+%mod-color-sub{
+    color: $colorMaxLight;
+    background-color: transparent;
+}
+%mod-color-modal{
+    color: $colorTxt-primary;
+    background-color: #fff;
+}
+%mod-sub{
+    border-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     
-    // &:hover {
+}
 
-    // }  
+%mod-base{
+    display: block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border 260ms $cubic;
+    
 }

@@ -71,6 +71,6 @@
     display: block;
     box-sizing: border-box;
     border-radius: 4px;
-    transition: border 260ms $cubic;
+    transition: border 260ms $cubic, color 260ms $cubic;
     
 }

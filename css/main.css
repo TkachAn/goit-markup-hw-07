@@ -887,6 +887,11 @@ a {
   background-color: #ffffff;
 }
 
+.modal__textarea {
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+
 .modal__close {
   display: block;
   width: 20px;

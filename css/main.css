@@ -162,18 +162,12 @@ a {
           transform: translate(-50%, -50%) scale(10%);
 }
 
-.hero__btn {
+.filter__btn, .hero__btn {
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero__btn:hover {
-  color: #ffffff;
-  background-color: #188ce8;
-  cursor: pointer;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__btn {
@@ -187,9 +181,21 @@ a {
           align-items: center;
 }
 
+.filter__btn {
+  padding: 6px 22px;
+}
+
 .hero__btn {
   color: #ffffff;
   background-color: #2196f3;
+}
+
+.filter__btn {
+  color: #212121;
+  background-color: #f5f4fa;
+  border: 1px solid var(--secondary-border-color, #eeeeee);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .hero__btn {
@@ -201,58 +207,32 @@ a {
   letter-spacing: 6%;
 }
 
-.botton__icon {
-  position: relative;
-  display: inline-block;
-  top: 6px;
-  left: 5px;
-  fill: #ffffff;
-  width: 24px;
-  height: 24px;
-  /* transform: rotate(1deg); */
-}
-
-/* .email-foo > div > button:hover~ */
-.botton__icon:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 1260ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 1260ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 1260ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 1260ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1260ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button__Filter {
+.filter__btn {
   font-family: Roboto;
   font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-style: 400;
+  line-height: 1.875;
+  line-height: 1.625;
+  letter-spacing: 3%;
 }
 
-.button__Filter:hover {
+.filter__btn:focus, .filter__btn:hover {
+  cursor: pointer;
+  color: var(--white-txt-color, #ffffff);
+  background-color: var(--primary-accent-color, #2196f3);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  /* border-radius: 4px; */
+  border: 1px solid var(--primary-accent-color, #2196f3);
+}
+
+.hero__btn:hover {
   color: #ffffff;
   background-color: #188ce8;
   cursor: pointer;
 }
 
-.button__Filter {
-  padding: 6px 22px;
-  font-style: 400;
-  color: #212121;
-  background-color: #f5f4fa;
-  line-height: 1.625;
-  letter-spacing: 3%;
-}
-
-.button__Filter {
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+/* .email-foo > div > button:hover~ */
 .subscription__email-input--sub:hover, .subscription__email-input--sub:focus {
   border: 1px solid #188ce8;
 }

@@ -79,6 +79,32 @@
     cursor: pointer;
 }
 }
+%btn-icon{
+  @extend %btn-base;
+  @extend %btn-size-fix;
+  @extend %btn-text-1; 
+  @extend %btn-color-1;
+  @extend %-icon;
+  &:hover {
+    color: $colorTxt-main;
+    background-color: $colorBtnBg-hover;
+    cursor: pointer;
+}
+}
+%-icon{
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    left: 5px;
+    fill: $colorMaxLight;
+    width: 24px;
+    height: 24px;
+    :hover {
+      transform: rotate(360deg);
+      transition: transform 1260ms $cubic;
+    }
+}
+
 .button {
     font-family : Roboto;
     font-size: 16px;
@@ -128,8 +154,7 @@
   }
 
 
-  $color--primary: #b29;
-$color--secondary: #19d;
+
 
 // &__filter{
 //   padding: 6px 22px;

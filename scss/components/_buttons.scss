@@ -1,20 +1,49 @@
 %btn-base{
-
+  border-radius: 4px;
+  box-shadow: $shadow-box;
+  transition: background-color 250ms $cubic;
+  &:hover {
+    color: $colorTxt-main;
+    background-color: $colorBtnBg-hover;
+    cursor: pointer;
+}
 }
 %btn-fix-size{
-
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
 }
 %btn-add-size{
-
+  padding: 6px 22px;
 }
 %btn-color{
 
 }
-%btn-text{
-
+%btn-text-1{
+  font-family : Roboto;
+  font-size: 16px;
+  font-style: 700;
+  line-height: 1.875;
+  line-height: 1.625;
+  letter-spacing: 6%;
+}
+%btn-text-2{
+  font-family : Roboto;
+  font-size: 16px;
+  font-style: 400;
+  line-height: 1.875;
+  line-height: 1.625;
+  letter-spacing: 3%;
 }
 %btn-icon{
-
+  position: relative;
+  display: inline-block;
+  top: 6px;
+  left: 5px;
+  fill: $colorMaxLight;
+  width: 24px;
+  height: 24px;
 }
 %btn-{
 
@@ -120,5 +149,6 @@ $color--secondary: #19d;
 }
 .button__Filter{
     @extend %btn--filter;
-    transition: background-color 250ms $cubic, border 250ms $cubic, color 250ms $cubic;
+    transition: background-color 250ms $cubic, 
+    border 250ms $cubic;
 }

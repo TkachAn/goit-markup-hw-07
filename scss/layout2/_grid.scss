@@ -13,25 +13,27 @@
     margin-top: calc(-1 * $gap);
     margin-left: calc(-1 * $gap);
     padding: 0;
+  &-card {
+      border: 1px solid $colorBorder;
+      margin-top: $gap;
+      margin-left: $gap;
+      flex-basis: calc(100% / $col - $gap);
+    }
+  &-card:hover .overlay,
+  &-card:hover .overlay-p {
+    transform: translatex(0);
+    color: $colorTxt-Light;
+  }
   }
   
-  .catalog-card {
-    border: 1px solid $colorBorder;
-    margin-top: $gap;
-    margin-left: $gap;
-    flex-basis: calc(100% / $col - $gap);
-  }
+  
   
   .box {
     position: relative;
     overflow: hidden;
   }
   
-  .catalog-card:hover .overlay,
-  .catalog-card:hover .overlay-p {
-    transform: translatex(0);
-    color: $colorTxt-Light;
-  }
+  
   
   .overlay {
     position: absolute;

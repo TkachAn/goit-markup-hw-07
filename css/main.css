@@ -1253,16 +1253,16 @@ a {
       flex-basis: calc(100% / $col - $gap);
 }
 
-.box {
-  position: relative;
-  overflow: hidden;
-}
-
 .catalog-card:hover .overlay,
 .catalog-card:hover .overlay-p {
   -webkit-transform: translatex(0);
           transform: translatex(0);
   color: #ffffff;
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay {
@@ -1344,11 +1344,6 @@ h6 {
   color: #fff;
   text-shadow: #969696 1px 3px 0,  #aba8a8 1px 7px 5px;
   margin: 0 0 30px;
-}
-
-p {
-  font-size: 24px;
-  margin-bottom: 100px;
 }
 
 .ex {
